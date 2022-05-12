@@ -1,0 +1,524 @@
+/* =======================================================================
+Template Name: Next Technologies
+Author:  SmartEye Technologies
+Author URI: www.smart-eye.in
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for web template
+
+======================================================================= */
+
+
+/* ===================================== Import Less ================================== */
+
+@import "values.less";
+@import "functions.less";
+
+
+/* ===================================== Basic CSS ================================== */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+   
+}
+img{max-width: 100%;}
+a {
+    text-decoration: none;
+    outline: none;
+}
+ul{margin-bottom: 0; padding-left: 0;}
+a:hover,
+a:focus,
+input,
+textarea {
+    text-decoration: none;
+    outline: none;
+}
+.cp{cursor: pointer}
+p{margin-bottom: 0px; width: 100%;}
+.layy{padding: 30px;}
+h2{width: 100%;}
+.no-padding{padding: 0px;}
+.no-margin{margin: 0px;}
+.sec-title{
+    text-align: center;
+    padding-bottom: 45px;
+    h2{font-size: 2rem; font-weight: 600}
+    p{font-size: 14px;}
+}
+body{
+    background:@background-color;
+    font-family:robot-slab;
+    font-size:@main-font-size;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 1080px){
+    .container{width: 100% !important; max-width: 100%;}
+   
+}
+
+.page-nav{
+    padding: 40px;text-align: center;
+    ul{float: none;margin: auto;}
+    h2{font-size: 40px;color: #444;}
+    ul li{
+        float: left;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        i{
+            width: 30px;
+            text-align: center;
+            color: #444;
+           
+        }
+        a{
+            color: #444;
+        }
+    }
+}
+
+/* ===================================== Header Style  ================================== */
+header{ .shado-1();}
+.header-top{
+    background-color: @background-dark;
+    color: @text-color-light;
+    a{color: @text-color-light;}
+    li{font-weight: 300; font-size: 13px;}
+    .head-links{
+        .list-float(10px, left);    
+    }
+    .social-links{
+        .list-float(10px, right);
+        li{padding-right: 20px;}
+    }
+    
+}
+nav{
+    background-color: @background-white;
+    padding: @padding-small;
+    ul{float: right;}
+    a{color: @text-color-light;}
+    img{width: 90%;}
+    i{margin-right: 15px !important;}
+   @media screen and (max-width: 760px){
+        img{width: 65%;}
+        .menu-tab{display: none; padding: 0px; margin-top: 5px;}
+        li{
+            width: 100%;
+           
+            border-top: 1px solid #CCC;
+            i{
+                float: right;
+                
+            }
+        }
+    }
+    @media screen and (max-width: 1200px){
+        li{padding: 25px 15px !important;}
+   
+    }
+    @media screen and (max-width: 914px){
+       .menu-tab{display: none; padding: 0px; margin-top: 5px;}
+        .small-menu{display: block !important;}
+        .col-sm-3{max-width: 100%;}
+        img{width: 100%;}
+        li{ padding: 10px 25px !important;}
+        .col-sm-8{padding: 0px;}
+    }
+    @media screen and (max-width: 600px){
+        img{width: 100%;}
+        .small-menu{margin-top: 8px !important;}
+        
+    }
+     @media screen and (max-width: 570px){
+        img{width: 60%;}
+        .small-menu{margin-top: -65px !important;}
+    }
+     @media screen and (max-width: 450px){
+        img{width: 60%;}
+        .small-menu{margin-top: -53px !important;}
+    }
+    @media screen and (max-width: 350px){
+        img{width: 60%;}
+        .small-menu{margin-top: -16% !important;}
+    }
+    li{
+        font-weight: 300;
+        font-size: 14px;
+        padding: 25px 40px;
+        float: left;
+            i{
+                margin-left:3px;
+            }
+    }
+    li:hover .sub-menu{
+        display: block;
+        a{color: #444}
+    }
+    li:hover a {color: #444}
+    a{
+       color: #444
+    }
+    .small-menu{
+        float: right;
+        color: #FFF;
+        font-size: 20px;
+        background-color: #555fae;
+        padding: 8px;
+        border-radius: 3px;
+        .card-1();
+        margin-top: 10px;
+        margin-right: -5px;
+        
+    }
+   
+}
+.scroll-to-fixed-fixed{
+    .shado-1();
+}
+.sub-menu{
+    z-index: 999;
+}
+.sub-menu-two-col{
+    .sub-menu(400px);
+    li{
+        width: 50%
+    }
+    margin-left: -20px;
+}
+.sub-menu-single-col{
+    .sub-menu(200px);
+    li{
+        width: 100%
+    }
+    margin-left: -20px;
+}
+.sub-menu-three-col{
+     .sub-menu(600px);
+    li{
+        width: 33.33%;
+         border-right: 1px solid #F6F6F6;
+    }
+    margin-left: -50%;
+}
+.scroll-to-fixed-fixed{
+    width: 100% !important;
+}
+
+ @media screen and (max-width: 914px){
+        .sub-menu{
+             position: relative !important;
+            li{width: 100%;}
+            box-shadow: 0px;
+        }
+     .sub-menu-single-col{width: 100%;}   
+     .sub-menu-two-col{
+          width: 100%;
+     }
+     .sub-menu-three-col{
+         width: 100%;
+         margin-left: 0px;
+         li{
+             width: 100%;
+         }
+     }
+    }
+
+/* ===================================== Key Features Style  ================================== */
+
+
+.key-feature-conten{
+    color:@text-color-light;
+    b{font-size: @bold-font;}
+    p{margin-top: 10px;}
+    i{font-size:42px; margin-bottom: 30px;}
+    .col-md-3:nth-child(odd) {
+        padding:@no-padding;
+        text-align: center;
+        .layy{ background: rgba(86, 97, 174, 0.9);}
+    }
+    .col-md-3:nth-child(even) {
+        padding:@no-padding;
+        text-align: center;
+        .layy{ background: rgba(61, 70, 138, 0.9)}
+    }
+    .key-feature-1{
+         .bakground-image("../images/key_features_01.jpg");
+    }
+    .key-feature-2{
+         .bakground-image("../images/key_features_02.jpg");
+    }
+    .key-feature-3{
+         .bakground-image("../images/key_features_03.jpg");
+    }
+    .key-feature-4{
+         .bakground-image("../images/key_features_04.jpg");
+    }
+}
+
+/* ===================================== Slider Style  ================================== */
+
+.slider{
+    overflow: hidden;
+    margin-top: 5px;
+     @media screen and (max-width: 720px){
+         .mini_font_size{display: none;}
+         .small_font_size{display: none;}
+        
+    }
+    @media screen and (max-width: 460px){
+        .btn-large{display: none}
+        .medium_font_size{font-size: 10px !important; margin-top: 20px !important;}
+    } 
+}
+
+
+/* ===================================== What-we-do Style  ================================== */
+
+.wat-we-do{
+    padding: @padding-xl;
+    @media screen and (max-width: 720px){
+        padding: 30px 10px;
+    }
+    background-color: @background-white;
+    text-align: center;
+    i{
+        padding: 20px;
+        border: 1px solid  #F2F2F2;
+        margin-bottom: 20px;
+        font-size: 40px;
+        color: @background-dark;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    p{
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    b{
+        font-size:14px;
+    }
+    .col-sm-4{padding: 30px;}
+}
+
+/* ===================================== home-page-About-us Style  ================================== */
+
+.home-about{
+    .about-img{padding: @no-padding;}
+    @media screen and (max-width: 580px){
+         height: auto;
+    }
+    height: 400px;
+    overflow: hidden;
+    .adout-det{
+        .bakground-image("../images/slider_demo.jpg");
+        height: 100%;
+        padding: @no-padding;
+        .layy{ 
+            background: rgba(61, 70, 138, 0.97); 
+            height: 100%;
+            color: @text-color-light;
+            padding: 40px;
+        }
+        b{
+            font-size: 2rem;
+        }
+        p{
+           text-align: justify;
+           text-indent: 25px; 
+           margin-top: 15px;
+        }
+    }
+}
+
+
+/* ===================================== Home-page-blog Style  ================================== */
+
+.home-blog{
+    padding: @padding-xl;
+    background-color: @background-white;
+    @media screen and (max-width: 720px){
+        padding: 10px;
+        .sec-title{padding-bottom: 20px;}
+    }
+}
+
+.blog-1{
+    background-color:@text-color-light;
+    margin-top: 20px;
+    .shado-2;
+    .blog-box1;
+}
+
+/* ===================================== Testimonial Style  ================================== */
+
+.testimonial-container{
+   
+    .bakground-image("../images/slider_demo.jpg");
+    .layy{ 
+            background: rgba(31, 72, 126, 0.8); 
+            height: 100%;
+            width: 100%;
+            color: @text-color-light;
+             padding: @padding-xl;
+        @media screen and (max-width: 720px){
+            padding: 10px;
+        }
+    }
+}
+
+/* ===================================== Clinet-list Style  ================================== */
+
+.client-list{
+    background-color: @background-white;
+    padding: @padding-xl;
+    @media screen and (max-width: 720px){
+        padding: 20px;
+    }
+}
+
+/* ===================================== Footer Style  ================================== */
+
+footer{
+    padding: @padding-lg;
+    background-color: @background-dark;
+    color: @text-color-light;
+    p{
+        color:  @text-color-light;
+    }
+    .blog-foot-cont{
+        b{font-size: 13px;}
+    }
+    .blog-ro{padding: 5px 0px; }
+   h2{
+       font-size: 18px;
+       font-weight: 600;
+       margin-bottom: 20px;
+    }
+    li{padding: 6px;}
+    @media screen and (max-width: 720px){
+        padding: 20px;
+        h2{margin-top: 30px;}
+    }
+   
+}
+
+/* ===================================== Copyright Style  ================================== */
+
+.copy{
+    background-color: #3F4998;
+    padding: @padding-sm;
+     color: @text-color-light;
+    text-align: center;
+    a{
+        color: #FFF;
+    }
+    img{
+        width: 20px;
+        margin-left: 7px;
+        margin-right: 2px;
+    }
+}
+
+
+/* ===================================== About Us(About Us Page) Style  ================================== */
+
+.about-us{
+    padding:@padding-lg;
+    background-color: #FFF;
+    p{text-align: justify;
+    font-size: 13px;
+    text-indent: 20px;}
+}
+
+/* ===================================== Our Team Style  ================================== */
+
+.our-team{
+     padding:@padding-lg;
+    .team-member{
+        padding: 10px;
+        background-color: #FFF;
+        img{margin-bottom: 5px;}
+        p{margin-top: 5px;}
+        b{padding: 5px;}
+        text-align: center;
+        ul li{
+            float: left;padding: 5px;
+            width: 20%; text-align: center;
+            border: 1px solid #CCC;
+        }
+        ul{
+            margin: 0px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+/* ===================================== Gallery Style  ================================== */
+
+.gallery-filter{
+    width: 100%;
+    text-align: center;
+    .btn{
+        background-color: #FFF;
+    }
+}
+.gallery{
+    padding: 30px;
+    background-color: #FFF;
+}
+.gallery-title
+{
+    font-size: 36px;
+    color: #29509f;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #29509f;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #29509f;
+    border-radius: 5px;
+    text-align: center;
+    color: #29509f;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #29509f;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #29509f;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #29509f;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
